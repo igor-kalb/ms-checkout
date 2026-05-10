@@ -7,7 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-@FeignClient(value = "product", url = "http://localhost:8000")
+@FeignClient(value = "product", url = "${clients.product.url}")
 public interface ProductClient {
 
     @PostMapping("/v1/products/validate")

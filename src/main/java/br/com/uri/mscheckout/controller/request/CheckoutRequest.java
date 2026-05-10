@@ -2,10 +2,9 @@ package br.com.uri.mscheckout.controller.request;
 
 import lombok.Data;
 
-import javax.validation.Valid;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-import java.util.Objects;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 
 @Data
 public class CheckoutRequest {
@@ -16,9 +15,5 @@ public class CheckoutRequest {
     @NotNull
     @Valid
     private ProductRequest productRequest;
-
-    @NotNull
-    @Valid
-    private ClientRequest clientRequest;
 
 }
